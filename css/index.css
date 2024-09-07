@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+/* 版心 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+header {
+    height: 340px;
+    /* background: url(../img/banner01.jpg) no-repeat center center/cover; */
+}
+
+
+header .swiper .swiper-slide {
+    height: 340px;
+}
+
+header .swiper .swiper-slide.s1 {
+    background: url(../img/蒙德.jpg) no-repeat center center/cover; 
+}
+
+header .swiper .swiper-slide.s2 {
+    background: url(../img/璃月.jpg) no-repeat center center/cover; 
+}
+
+header .swiper .swiper-slide.s3 {
+    background: url(../img/稻妻.jpg) no-repeat center center/cover; 
+}
+
+
+
+
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 300;
+}
+
+.menu .container {
+    position: relative;
+}
+
+header .nav {
+    height: 50px;
+    position: absolute;
+    left: 200px;
+}
+
+header .nav>li {
+    float: left;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+header .nav>li>a {
+    color: #eee;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav>li:hover {
+    background-color: crimson;
+}
+
+header .nav>li>dl {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+}
+
+header .nav>li>dl>dd>a {
+    color: #eee;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav>li>dl>dd:hover {
+    background-color: crimson;
+}
+
+
+.logo {
+    width: 168px;
+    height: 130px;
+    background: url(../img/logo.png) no-repeat center center/cover;
+    position: absolute;
+}
+
+.title>h2 {
+    color: #D63031;
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.title>h3 {
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+/* 一楼，作业展示 */
+.floor1 .pic>div {
+    float: left;
+}
+
+.floor1 .pic>.ctr {
+    width: 545px;
+    height: 715px;
+    background: url(../img/班尼特.png) no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.floor1 .pic>.ctr>.cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: url(../img/cover-lg.png) no-repeat center center/cover;
+}
+
+.floor1 .pic>.ctr>.cover>h2 {
+    text-align: center;
+    margin-top: calc(50% + 100px);
+    color: #eee;
+    font-weight: normal;
+}
+.floor1 .pic>.lft .cover>h2 {
+    text-align: center;
+    margin-top: calc(25% + 100px);
+    color: #eee;
+    font-weight: normal;
+}
+
+
+.floor1 .pic>.lft,
+.floor1 .pic>.rgt {
+    height: 715px;
+    width: calc((100% - 545px - 20px) / 2);
+
+}
+
+.floor1 .pic>.lft {
+    margin-right: 10px;
+}
+
+.floor1 .pic>.rgt {
+    margin-left: 10px;
+}
+
+.floor1 .pic>.lft>div,
+.floor1 .pic>.rgt>div {
+    width: 100%;
+    height: calc(50% - 5px);
+    position: relative;
+    overflow: hidden;
+}
+.floor1 .pic>.rgt .cover>h2 {
+    text-align: center;
+    margin-top: calc(25% + 100px);
+    color: #fff;
+    font-weight: normal;
+}
+
+.floor1 .pic>.lft .cover,
+.floor1 .pic>.rgt .cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: url(../img/cover-lg.png) no-repeat center center/cover;
+}
+
+
+
+
+.floor1 .pic>.lft>div:first-child,
+.floor1 .pic>.rgt>div:first-child {
+    margin-bottom: 10px;
+}
+
+.floor1 .pic>.lft>div:first-child {
+    background: url(../img/温迪.png) no-repeat center center/cover;
+}
+
+.floor1 .pic>.lft>div:last-child {
+    background: url(../img/米卡.png) no-repeat center center/cover;
+}
+
+.floor1 .pic>.rgt>div:first-child {
+    background: url(../img/甘雨.png) no-repeat center center/cover;
+}
+
+.floor1 .pic>.rgt>div:last-child {
+    background: url(../img/魈.png) no-repeat center center/cover;
+}
+
+
+/* 二楼，场景展示 */
+.floor2 .pic>div {
+    float: left;
+    height: 337px;
+    width: calc((100% - 30px) / 4);
+    margin-right: 10px;
+    position: relative;
+}
+
+.floor2 .pic>div>.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+}
+
+.floor2 .pic>div:last-child {
+    margin-right: 0;
+}
+
+.floor2 .pic>div:nth-child(1) {
+    background: url(../img/珊瑚宫.png) no-repeat center center/cover;
+}
+
+.floor2 .pic>div:nth-child(2) {
+    background: url(../img/装备.png) no-repeat center center/cover;
+}
+
+.floor2 .pic>div:nth-child(3) {
+    background: url(../img/一斗.png) no-repeat center center/cover;
+}
+
+.floor2 .pic>div:nth-child(4) {
+    background: url(../img/深渊.png) no-repeat center center/cover;
+}
+
+/* 新闻资讯 */
+.floor3 ul>li {
+    width: 50%;
+    float: left;
+    margin-bottom: 80px;
+}
+
+.floor3 ul>li>div {
+    float: left;
+}
+
+.floor3 ul>li>.pic {
+    width: 175px;
+    height: 90px;
+    background: url(../img/活动.png) no-repeat center center/cover;
+    position: relative;
+}
+
+/* 遮罩 */
+.floor3 ul>li>.pic>.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: goldenrod;
+    opacity: .8;
+    text-align: center;
+    /* padding-top: 20px;
+    box-sizing: border-box; */
+}
+
+.floor3 ul>li>.pic>.cover>i {
+    font-style: normal;
+    color: #fff;
+    font-size: 36px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.floor3 ul>li>.content {
+    height: 90px;
+    width: calc(100% - 175px);
+    overflow: hidden;
+}
+
+.floor3 ul>li>.content>h3 {
+    font-weight: normal;
+    color: #666;
+    margin: 0;
+    /* 单行文本溢出时显示省略号 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #666;
+}
+
+.floor3 ul>li>.content>p {
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #000000;
+    height: 130px;
+}
+
+footer .logo {
+    width: 250px;
+    height: 90px;
+    background: url(../img/end_logo.png) no-repeat center center/cover;
+    margin-top: 20px;
+}
+
+footer .address>p {
+    color: #eee;
+}
+
+
+.gotoTop {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: calc(50% + 605px);
+    border-radius: 5px;
+    background: url(../img/arrow.png) no-repeat center center;
+    background-color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+}

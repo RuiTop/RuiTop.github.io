@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* 重置样式 */
+body {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 公共样式 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 0;
+}
+
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
